@@ -1,0 +1,22 @@
+{
+    "name": "DSP API log记录工具",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["js/jquery-3.1.0.min.js", "js/content_script.js"],
+         "run_at": "document_end"
+    }],
+    "permissions": ["tabs"],
+    "description": "dsp api log查询格式化工具.",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "DSP API log记录工具",
+        "default_popup": "popup.html"
+    }
+}

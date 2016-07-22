@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootflat/css/bootflat.min.css">
+    <link rel="stylesheet" href="bootflat/css/bootstrap.min.css">
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        color: #333;
+        min-width:600px;
+        width:350px;
+        overflow: auto;
+        margin: 0px;
+        padding: 5px;
+        background: white;
+        font-size: 12px;
+    }
+
+    table th{
+		width:100px;
+		word-break: break-all;
+    }
+    table td{
+    	word-break: break-all;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+    	<button id="formatBtn" class="btn btn-info btn-block">格式化Log</button>
+    </div>
+    <div>
+		<table class="table" id="log_table">
+			<thead>
+				<th>时间</th>
+				<th>操作用户ID</th>
+				<th style="width:65px;">操作方法</th>
+				<th>操作说明</th>
+				<th>请求地址</th>
+				<th>请求数据</th>
+			</thead>
+			<tbody>
+
+			</tbody>
+		</table>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
